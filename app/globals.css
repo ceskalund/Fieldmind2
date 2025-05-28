@@ -1,0 +1,204 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 0% 83.1%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-size: 16px; /* Base font size for mobile */
+  }
+
+  /* Mobile-first typography */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-medium tracking-tight text-charcoal;
+    letter-spacing: -0.02em;
+    word-wrap: break-word;
+    hyphens: auto;
+  }
+
+  /* Improved mobile typography with better size scaling */
+  h1 {
+    @apply text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+  }
+
+  h2 {
+    @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+  }
+
+  h3 {
+    @apply text-xl sm:text-2xl md:text-3xl font-semibold;
+    line-height: 1.3;
+  }
+
+  h4 {
+    @apply text-lg sm:text-xl md:text-2xl font-semibold;
+    line-height: 1.4;
+  }
+
+  p {
+    @apply text-base md:text-lg font-normal;
+    line-height: 1.6; /* Increased line height for better readability on mobile */
+    max-width: 70ch; /* Optimal reading width */
+  }
+
+  /* Mobile-optimized hero text */
+  .hero-text {
+    @apply text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold tracking-tight;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+  }
+
+  /* Improved text for small screens */
+  .text-mobile-optimized {
+    font-size: clamp(1rem, 4vw, 1.25rem);
+    line-height: 1.6;
+  }
+
+  /* Ensure links are easily tappable on mobile */
+  a,
+  button {
+    @apply py-2; /* Minimum touch target height */
+    touch-action: manipulation; /* Optimize for touch */
+  }
+
+  /* Prevent text from being too small on mobile */
+  .text-sm {
+    font-size: 0.875rem; /* Minimum 14px for readability */
+  }
+
+  /* Improved contrast for form labels on mobile */
+  label {
+    @apply font-medium;
+  }
+
+  /* Ensure form inputs have adequate text size on mobile */
+  input,
+  textarea,
+  select {
+    font-size: 16px; /* Prevents iOS zoom on focus */
+  }
+
+  /* Prevent long words from breaking layout on mobile */
+  .break-words {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+  }
+}
+
+.section-spacing {
+  @apply py-16 sm:py-20 md:py-24 lg:py-32;
+}
+
+.massive-spacing {
+  @apply py-20 sm:py-24 md:py-32 lg:py-40;
+}
+
+/* Video hero section specific styles */
+.video-hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* Modern button styles with improved mobile touch targets */
+.btn-modern {
+  @apply inline-flex items-center justify-center rounded-md border border-gray-200 bg-white px-5 py-3 sm:px-6 text-base font-medium text-charcoal transition-colors hover:bg-gray-50;
+  min-height: 44px; /* Minimum touch target height */
+  min-width: 44px; /* Minimum touch target width */
+}
+
+.btn-modern-primary {
+  @apply inline-flex items-center justify-center rounded-md bg-sage-green px-5 py-3 sm:px-6 text-base font-medium text-white transition-colors hover:bg-sage-green/90;
+  min-height: 44px; /* Minimum touch target height */
+  min-width: 44px; /* Minimum touch target width */
+}
+
+.btn-arrow {
+  @apply inline-flex items-center gap-2;
+}
+
+.btn-arrow svg {
+  @apply transition-transform duration-200;
+}
+
+.btn-arrow:hover svg {
+  @apply translate-x-1;
+}
+
+/* Mobile-optimized container padding */
+.container-mobile-padding {
+  @apply px-4 sm:px-6 md:px-8;
+}
+
+/* Improved spacing for mobile content */
+.mobile-content-spacing > * + * {
+  @apply mt-4 sm:mt-6;
+}
+
+/* Ensure text doesn't overflow on small screens */
+.text-container {
+  max-width: 100%;
+  overflow-wrap: break-word;
+}
