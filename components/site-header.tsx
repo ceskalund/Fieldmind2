@@ -19,7 +19,7 @@ export function SiteHeader() {
               alt="Fieldmind - AI-Powered Advisory for Modern Farming"
               width={207}
               height={52}
-              className="h-auto w-auto max-h-12 sm:max-h-14 md:max-h-16"  // More granular responsive sizing
+              className="h-auto w-auto max-h-12 sm:max-h-14 md:max-h-16"
               priority={true}
             />
           </Link>

@@ -124,7 +124,7 @@ export default function Home() {
               <div className="flex flex-col items-center text-center">
                 <div className="relative w-full h-64 mb-8 bg-light-gray rounded-lg overflow-hidden">
                   <Image
-                    src="/Images/farmeradvisor.jpg"
+                    src="/images/farmeradvisor.jpg"
                     alt="Local Farm Data"
                     fill
                     sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
