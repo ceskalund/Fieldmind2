@@ -41,7 +41,7 @@ const siteConfig = {
   ],
   creator: "Fieldmind",
   themeColor: "#4A5D23", // sage-green
-  socialImage: "/images/fieldmind-social-card.png",
+  socialImage: "/Images/fieldmind-social-card.png",
   locale: "en_US",
   type: "website",
 }
@@ -82,25 +82,25 @@ export const metadata: Metadata = {
 
   // Icons
   icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon-16x16.png",
-    apple: "/apple-touch-icon.png",
+    icon: "/Images/favicon.ico",
+    shortcut: "/Images/favicon-16x16.png",
+    apple: "/Images/apple-touch-icon.png",
     other: [
       {
         rel: "icon",
         type: "image/png",
         sizes: "32x32",
-        url: "/favicon-32x32.png",
+        url: "/Images/favicon-32x32.png",
       },
       {
         rel: "icon",
         type: "image/png",
         sizes: "16x16",
-        url: "/favicon-16x16.png",
+        url: "/Images/favicon-16x16.png",
       },
       {
         rel: "mask-icon",
-        url: "/safari-pinned-tab.svg",
+        url: "/Images/safari-pinned-tab.svg",
         color: siteConfig.themeColor,
       },
     ],

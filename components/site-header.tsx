@@ -15,7 +15,7 @@ export function SiteHeader() {
           {/* Logo Section */}
           <Link href="/" className="flex items-center">
             <Image
-              src="/images/Fieldmind Logo.png"
+              src="/Images/Fieldmind Logo.png"
               alt="Fieldmind - AI-Powered Advisory for Modern Farming"
               width={207}
               height={52}

@@ -39,7 +39,7 @@ export default function AboutPage() {
               <div className="bg-white p-8 rounded-lg shadow-sm">
                 <div className="relative h-[400px] rounded-lg overflow-hidden">
                   <Image
-                    src="/images/problem1.jpg"
+                    src="/Images/problem1.jpg"
                     alt="Agricultural advisor with data"
                     fill
                     className="object-cover"
@@ -119,7 +119,7 @@ export default function AboutPage() {
               <div className="order-2 md:order-1 bg-white p-8 rounded-lg shadow-sm">
                 <div className="relative h-[400px] rounded-lg overflow-hidden">
                   <Image
-                    src="/images/solution.jpg"
+                    src="/Images/solution.jpg"
                     alt="Fieldmind platform"
                     fill
                     className="object-cover"
@@ -158,7 +158,7 @@ export default function AboutPage() {
               <div className="flex flex-col items-center text-center">
                 <div className="relative w-full h-64 mb-8 bg-white rounded-lg overflow-hidden">
                   <img
-                    src="/images/farmeradvisor.jpg"
+                    src="/Images/farmeradvisor.jpg"
                     alt="Local Farm Data"
                     className="w-full h-full object-cover"
                   />
@@ -173,7 +173,7 @@ export default function AboutPage() {
               <div className="flex flex-col items-center text-center">
                 <div className="relative w-full h-64 mb-8 bg-white rounded-lg overflow-hidden">
                   <img
-                    src="/images/scientist.jpg"
+                    src="/Images/scientist.jpg"
                     alt="Quality Research & Climate Forecasts"
                     className="w-full h-full object-cover"
                   />
@@ -188,7 +188,7 @@ export default function AboutPage() {
               <div className="flex flex-col items-center text-center">
                 <div className="relative w-full h-64 mb-8 bg-white rounded-lg overflow-hidden">
                   <img
-                    src="/images/dataanalysis.jpg"
+                    src="/Images/dataanalysis.jpg"
                     alt="Tailored Recommendations"
                     className="w-full h-full object-cover"
                   />
