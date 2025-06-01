@@ -26,7 +26,7 @@ export default function TeamPage() {
                 <div className="flex flex-col items-center">
                   <div className="relative w-40 h-40 rounded-full overflow-hidden mb-6">
                     <img
-                      src="/images/marte.jpeg"
+                      src="/Images/marte.jpeg"
                       alt="Marte Øverdal"
                       className="w-full h-full object-cover"
                     />
@@ -64,7 +64,7 @@ export default function TeamPage() {
                 <div className="flex flex-col items-center">
                   <div className="relative w-40 h-40 rounded-full overflow-hidden mb-6">
                     <img
-                      src="/images/pierre.jpeg"
+                      src="/Images/pierre.jpeg"
                       alt="Pierre-Julien Harbonnier"
                       className="w-full h-full object-cover"
                     />
@@ -109,7 +109,7 @@ export default function TeamPage() {
                 <div className="bg-white p-8 rounded-lg shadow-sm flex flex-col items-center text-center h-full">
                   <div className="w-48 h-24 mb-6 overflow-hidden rounded">
                     <img
-                      src="/images/startuplab.jpg"
+                      src="/Images/startuplab.jpg"
                       alt="StartupLab Oslo"
                       className="w-full h-full object-contain"
                     />
@@ -144,7 +144,7 @@ export default function TeamPage() {
                 <div className="bg-white p-8 rounded-lg shadow-sm flex flex-col items-center text-center h-full">
                   <div className="w-48 h-24 mb-6 overflow-hidden rounded">
                     <img
-                      src="/images/NLR.jpg"
+                      src="/Images/NLR.jpg"
                       alt="Norsk landbruksrådgivning"
                       className="w-full h-full object-contain"
                     />

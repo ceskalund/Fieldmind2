@@ -28,7 +28,7 @@ export default function Home() {
             }
           >
             <LazyImageBackground
-              imageSrc="/images/Fieldmind landingpage.jpg"
+              imageSrc="/Images/Fieldmind landingpage.jpg"
               overlayOpacity={0.65}
               priority={true}
             />
@@ -124,7 +124,7 @@ export default function Home() {
               <div className="flex flex-col items-center text-center">
                 <div className="relative w-full h-64 mb-8 bg-light-gray rounded-lg overflow-hidden">
                   <Image
-                    src="/images/farmeradvisor.jpg"
+                    src="/Images/farmeradvisor.jpg"
                     alt="Local Farm Data"
                     fill
                     sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
@@ -142,7 +142,7 @@ export default function Home() {
               <div className="flex flex-col items-center text-center">
                 <div className="relative w-full h-64 mb-8 bg-light-gray rounded-lg overflow-hidden">
                   <Image
-                    src="/images/scientist.jpg"
+                    src="/Images/scientist.jpg"
                     alt="Quality Research & Climate Forecasts"
                     fill
                     sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
@@ -160,7 +160,7 @@ export default function Home() {
               <div className="flex flex-col items-center text-center">
                 <div className="relative w-full h-64 mb-8 bg-light-gray rounded-lg overflow-hidden">
                   <Image
-                    src="/images/dataanalysis.jpg"
+                    src="/Images/dataanalysis.jpg"
                     alt="Tailored Recommendations"
                     fill
                     sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
