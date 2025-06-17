@@ -18,7 +18,6 @@ export async function POST(request) {
   
       // Validate environment variables
       if (!process.env.MAILCHIMP_API_KEY || !process.env.MAILCHIMP_SERVER_PREFIX || !process.env.MAILCHIMP_AUDIENCE_ID) {
-<<<<<<< HEAD
         console.error('Missing required Mailchimp environment variables:', {
           hasApiKey: !!process.env.MAILCHIMP_API_KEY,
           hasServerPrefix: !!process.env.MAILCHIMP_SERVER_PREFIX,
@@ -39,16 +38,9 @@ export async function POST(request) {
         serverPrefix: process.env.MAILCHIMP_SERVER_PREFIX,
         audienceId: process.env.MAILCHIMP_AUDIENCE_ID
       });
-      
-      const url = `https://${process.env.MAILCHIMP_SERVER_PREFIX}.api.mailchimp.com/3.0/lists/${process.env.MAILCHIMP_AUDIENCE_ID}/members`;
-      console.log('Mailchimp API URL:', url);
-=======
-        console.error('Missing required Mailchimp environment variables');
-        return Response.json({ error: 'Server configuration error' }, { status: 500 });
-      }
   
       const url = `https://${process.env.MAILCHIMP_SERVER_PREFIX}.api.mailchimp.com/3.0/lists/${process.env.MAILCHIMP_AUDIENCE_ID}/members`;
->>>>>>> 3ba488e40710788069cf626ac6cba9d19e6ab77c
+      console.log('Mailchimp API URL:', url);
       
       // Create base64 encoded auth string for Basic Auth
       const auth = Buffer.from(`anystring:${process.env.MAILCHIMP_API_KEY}`).toString('base64');
@@ -70,12 +62,8 @@ export async function POST(request) {
       });
   
       const data = await response.json();
-<<<<<<< HEAD
       console.log('Mailchimp response status:', response.status);
       console.log('Mailchimp response data:', data);
-=======
-      console.log('Mailchimp response:', data);
->>>>>>> 3ba488e40710788069cf626ac6cba9d19e6ab77c
   
       if (response.ok) {
         return Response.json({ 
@@ -83,29 +71,20 @@ export async function POST(request) {
           message: 'Successfully subscribed! Check your email for a welcome message.' 
         });
       }
-<<<<<<< HEAD
-        
-=======
   
->>>>>>> 3ba488e40710788069cf626ac6cba9d19e6ab77c
       // Handle specific Mailchimp API errors
       switch (data.title) {
         case 'Member Exists':
           return Response.json({ 
             error: 'This email is already subscribed to our newsletter!' 
           }, { status: 400 });
-<<<<<<< HEAD
-  
-=======
         
->>>>>>> 3ba488e40710788069cf626ac6cba9d19e6ab77c
         case 'Invalid Resource':
           return Response.json({ 
             error: 'Please enter a valid email address' 
           }, { status: 400 });
         
         case 'API Key Invalid':
-<<<<<<< HEAD
           console.error('Invalid Mailchimp API key - Response:', data);
           return Response.json({ 
             error: 'Server configuration error - Invalid API key' 
@@ -113,9 +92,9 @@ export async function POST(request) {
         
         case 'Resource Not Found':
           console.error('Invalid Mailchimp audience ID - Response:', data);
-        return Response.json({ 
+          return Response.json({ 
             error: 'Server configuration error - Invalid audience ID' 
-        }, { status: 500 });
+          }, { status: 500 });
         
         default:
           console.error('Mailchimp API Error:', {
@@ -128,23 +107,6 @@ export async function POST(request) {
             error: data.detail || 'Failed to subscribe. Please try again.',
             mailchimp_error: data,
             status: response.status
-=======
-          console.error('Invalid Mailchimp API key');
-          return Response.json({ 
-            error: 'Server configuration error' 
-          }, { status: 500 });
-        
-        case 'Resource Not Found':
-          console.error('Invalid Mailchimp audience ID');
-          return Response.json({ 
-            error: 'Server configuration error' 
-          }, { status: 500 });
-        
-        default:
-          console.error('Mailchimp API Error:', data);
-          return Response.json({ 
-            error: data.detail || 'Failed to subscribe. Please try again.' 
->>>>>>> 3ba488e40710788069cf626ac6cba9d19e6ab77c
           }, { status: response.status });
       }
   
@@ -154,4 +116,4 @@ export async function POST(request) {
         error: 'Unable to connect to the newsletter service. Please try again later.' 
       }, { status: 500 });
     }
-  }
+  } 
