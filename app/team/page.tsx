@@ -104,17 +104,17 @@ export default function TeamPage() {
         <section className="section-spacing px-6 md:px-8">
           <div className="max-w-7xl mx-auto">
             <h2 className="text-center mb-16">Our Collaborations</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
-              <div className="bg-light-gray p-8 rounded-lg">
-                <div className="bg-white p-8 rounded-lg shadow-sm flex flex-col items-center text-center h-full">
-                  <div className="w-48 h-24 mb-6 overflow-hidden rounded">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+              <div className="bg-light-gray p-6 rounded-lg">
+                <div className="bg-white p-6 rounded-lg shadow-sm flex flex-col items-center text-center h-full">
+                  <div className="w-40 h-20 mb-4 overflow-hidden rounded">
                     <img
                       src="/Images/startuplab.jpg"
                       alt="StartupLab Oslo"
                       className="w-full h-full object-contain"
                     />
                   </div>
-                  <h3 className="mb-4">
+                  <h3 className="mb-3 text-lg">
                     <Link
                       href="https://startuplab.no/"
                       target="_blank"
@@ -124,7 +124,7 @@ export default function TeamPage() {
                       StartupLab Oslo
                     </Link>
                   </h3>
-                  <p className="text-gray-600 mb-6">
+                  <p className="text-gray-600 mb-4 text-sm">
                     Fieldmind is proud to be part of StartupLab Oslo, Norway's leading technology incubator for
                     ambitious founders.
                   </p>
@@ -132,24 +132,24 @@ export default function TeamPage() {
                     href="https://startuplab.no/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center text-sage-green hover:text-sage-green/80 transition-colors mt-auto"
+                    className="inline-flex items-center text-sage-green hover:text-sage-green/80 transition-colors mt-auto text-sm"
                   >
                     <span className="mr-1">Visit Website</span>
-                    <ExternalLink className="h-4 w-4" />
+                    <ExternalLink className="h-3 w-3" />
                   </Link>
                 </div>
               </div>
 
-              <div className="bg-light-gray p-8 rounded-lg">
-                <div className="bg-white p-8 rounded-lg shadow-sm flex flex-col items-center text-center h-full">
-                  <div className="w-48 h-24 mb-6 overflow-hidden rounded">
+              <div className="bg-light-gray p-6 rounded-lg">
+                <div className="bg-white p-6 rounded-lg shadow-sm flex flex-col items-center text-center h-full">
+                  <div className="w-40 h-20 mb-4 overflow-hidden rounded">
                     <img
                       src="/Images/NLR.jpg"
                       alt="Norsk landbruksrådgivning"
                       className="w-full h-full object-contain"
                     />
                   </div>
-                  <h3 className="mb-4">
+                  <h3 className="mb-3 text-lg">
                     <Link
                       href="https://www.nlr.no/"
                       target="_blank"
@@ -159,7 +159,7 @@ export default function TeamPage() {
                       Norsk landbruksrådgivning
                     </Link>
                   </h3>
-                  <p className="text-gray-600 mb-6">
+                  <p className="text-gray-600 mb-4 text-sm">
                     We're working closely with Norsk landbruksrådgivning, Norway's leading agricultural advisory
                     service, to develop solutions that address real farming challenges.
                   </p>
@@ -167,10 +167,78 @@ export default function TeamPage() {
                     href="https://www.nlr.no/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center text-sage-green hover:text-sage-green/80 transition-colors mt-auto"
+                    className="inline-flex items-center text-sage-green hover:text-sage-green/80 transition-colors mt-auto text-sm"
                   >
                     <span className="mr-1">Visit Website</span>
-                    <ExternalLink className="h-4 w-4" />
+                    <ExternalLink className="h-3 w-3" />
+                  </Link>
+                </div>
+              </div>
+
+              <div className="bg-light-gray p-6 rounded-lg">
+                <div className="bg-white p-6 rounded-lg shadow-sm flex flex-col items-center text-center h-full">
+                  <div className="w-40 h-20 mb-4 overflow-hidden rounded">
+                    <img
+                      src="/Images/aggrator.jpeg"
+                      alt="Aggrator"
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
+                  <h3 className="mb-3 text-lg">
+                    <Link
+                      href="https://aggrator.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-sage-green transition-colors"
+                    >
+                      Aggrator
+                    </Link>
+                  </h3>
+                  <p className="text-gray-600 mb-4 text-sm">
+                    Partnering with Aggrator, a growth partner for startups and scaleups developing solutions in agrifoodtech and environmental technology.
+                  </p>
+                  <Link
+                    href="https://aggrator.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center text-sage-green hover:text-sage-green/80 transition-colors mt-auto text-sm"
+                  >
+                    <span className="mr-1">Visit Website</span>
+                    <ExternalLink className="h-3 w-3" />
+                  </Link>
+                </div>
+              </div>
+
+              <div className="bg-light-gray p-6 rounded-lg">
+                <div className="bg-white p-6 rounded-lg shadow-sm flex flex-col items-center text-center h-full">
+                  <div className="w-40 h-20 mb-4 overflow-hidden rounded">
+                    <img
+                      src="/Images/innovasjon-norge.svg"
+                      alt="Innovasjon Norge"
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
+                  <h3 className="mb-3 text-lg">
+                    <Link
+                      href="https://www.innovasjonnorge.no/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-sage-green transition-colors"
+                    >
+                      Innovasjon Norge
+                    </Link>
+                  </h3>
+                  <p className="text-gray-600 mb-4 text-sm">
+                    Working with Innovasjon Norge to help Norwegian businesses scale, internationalize, and explore green market opportunities.
+                  </p>
+                  <Link
+                    href="https://www.innovasjonnorge.no/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center text-sage-green hover:text-sage-green/80 transition-colors mt-auto text-sm"
+                  >
+                    <span className="mr-1">Visit Website</span>
+                    <ExternalLink className="h-3 w-3" />
                   </Link>
                 </div>
               </div>

@@ -46,6 +46,35 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Social Proof / Collaborators Banner */}
+        <section className="py-10 bg-white">
+          <div className="max-w-6xl mx-auto px-4">
+            <h2 className="text-center text-lg sm:text-xl font-medium text-gray-700 mb-8">Partnering with industry leaders</h2>
+            <div className="flex flex-wrap justify-center items-center gap-x-10 gap-y-8">
+              {/* StartupLab Oslo */}
+              <a href="https://startuplab.no/" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center group w-32">
+                <img src="/Images/startuplab.png" alt="StartupLab Oslo" className="h-12 sm:h-14 w-auto object-contain mb-2 transition-transform group-hover:scale-105" />
+                <span className="text-xs sm:text-sm text-gray-700 text-center">StartupLab Oslo</span>
+              </a>
+              {/* Norsk landbruksrådgivning */}
+              <a href="https://www.nlr.no/" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center group w-32">
+                <img src="/Images/NLR.jpg" alt="Norsk landbruksrådgivning" className="h-12 sm:h-14 w-auto object-contain mb-2 transition-transform group-hover:scale-105" />
+                <span className="text-xs sm:text-sm text-gray-700 text-center">Norsk landbruksrådgivning</span>
+              </a>
+              {/* Aggrator */}
+              <a href="https://aggrator.com/" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center group w-32">
+                <img src="/Images/aggrator.jpeg" alt="Aggrator" className="h-12 sm:h-14 w-auto object-contain mb-2 transition-transform group-hover:scale-105" />
+                <span className="text-xs sm:text-sm text-gray-700 text-center">Aggrator</span>
+              </a>
+              {/* Innovasjon Norge */}
+              <a href="https://www.innovasjonnorge.no/" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center group w-32">
+                <img src="/Images/innovasjon-norge.svg" alt="Innovasjon Norge" className="h-12 sm:h-14 w-auto object-contain mb-2 transition-transform group-hover:scale-105" />
+                <span className="text-xs sm:text-sm text-gray-700 text-center">Innovasjon Norge</span>
+              </a>
+            </div>
+          </div>
+        </section>
+
         {/* Challenges Section */}
         <section className="section-spacing bg-light-gray container-mobile-padding">
           <div className="max-w-7xl mx-auto">
