@@ -1,4 +1,4 @@
-// app/api/Newsletter/route.js
+ // app/api/Newsletter/route.js
 export async function POST(request) {
   console.log('Newsletter API called');
   
@@ -21,24 +21,11 @@ export async function POST(request) {
       console.error('Missing required Mailchimp environment variables:', {
         hasApiKey: !!process.env.MAILCHIMP_API_KEY,
         hasServerPrefix: !!process.env.MAILCHIMP_SERVER_PREFIX,
-        hasAudienceId: !!process.env.MAILCHIMP_AUDIENCE_ID,
-        serverPrefix: process.env.MAILCHIMP_SERVER_PREFIX,
-        audienceId: process.env.MAILCHIMP_AUDIENCE_ID
+        hasAudienceId: !!process.env.MAILCHIMP_AUDIENCE_ID
       });
       return Response.json({ error: 'Server configuration error' }, { status: 500 });
     }
 
-    // Log API key format (safely)
-    const apiKeyPrefix = process.env.MAILCHIMP_API_KEY.substring(0, 4);
-    const apiKeySuffix = process.env.MAILCHIMP_API_KEY.substring(process.env.MAILCHIMP_API_KEY.length - 4);
-    console.log('API Key format check:', {
-      prefix: apiKeyPrefix,
-      suffix: apiKeySuffix,
-      length: process.env.MAILCHIMP_API_KEY.length,
-      serverPrefix: process.env.MAILCHIMP_SERVER_PREFIX,
-      audienceId: process.env.MAILCHIMP_AUDIENCE_ID
-    });
-    
     const url = `https://${process.env.MAILCHIMP_SERVER_PREFIX}.api.mailchimp.com/3.0/lists/${process.env.MAILCHIMP_AUDIENCE_ID}/members`;
     console.log('Mailchimp API URL:', url);
     
