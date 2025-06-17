@@ -1,4 +1,4 @@
- // app/api/Newsletter/route.js
+// app/api/Newsletter/route.js
 export async function POST(request) {
   console.log('Newsletter API called');
   
