@@ -28,21 +28,19 @@ export function SiteFooter() {
               target="_blank"
               rel="noopener noreferrer"
               className="flex flex-col items-center w-28"
-              style={{ filter: "grayscale(1) brightness(0.2)" }}
             >
-              <img src="/Images/startuplab.png" alt="StartupLab Oslo" className="h-10 w-auto object-contain mb-1" />
-              <span className="text-xs text-gray-300 text-center">StartupLab Oslo</span>
+              <img src="/Images/startuplab.png" alt="StartupLab Oslo" className="h-10 w-auto object-contain mb-1" style={{ filter: "brightness(0) invert(1)" }} />
+              <span className="text-sm text-white hover:text-white transition-colors py-2">StartupLab Oslo</span>
             </a>
-            {/* Norsk landbruksrådgivning */}
+            {/* Norsk landbruksrådgivning - Clean SVG without background */}
             <a
               href="https://www.nlr.no/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex flex-col items-center w-28"
-              style={{ filter: "grayscale(1) brightness(0.2)" }}
             >
-              <img src="/Images/NLR.jpg" alt="Norsk landbruksrådgivning" className="h-10 w-auto object-contain mb-1" />
-              <span className="text-xs text-gray-300 text-center">Norsk landbruksrådgivning</span>
+              <img src="/Images/NLR.svg" alt="Norsk landbruksrådgivning" className="h-10 w-auto object-contain mb-1" style={{ filter: "brightness(0) invert(1)" }} />
+              <span className="text-sm text-white hover:text-white transition-colors py-2">Norsk landbruksrådgivning</span>
             </a>
             {/* Aggrator */}
             <a
@@ -50,10 +48,9 @@ export function SiteFooter() {
               target="_blank"
               rel="noopener noreferrer"
               className="flex flex-col items-center w-28"
-              style={{ filter: "grayscale(1) brightness(0.2)" }}
             >
-              <img src="/Images/aggrator.jpeg" alt="Aggrator" className="h-10 w-auto object-contain mb-1" />
-              <span className="text-xs text-gray-300 text-center">Aggrator</span>
+              <img src="/Images/aggrator.svg" alt="Aggrator" className="h-10 w-auto object-contain mb-1" style={{ filter: "brightness(0) invert(1)" }} />
+              <span className="text-sm text-white hover:text-white transition-colors py-2">Aggrator</span>
             </a>
             {/* Innovasjon Norge */}
             <a
@@ -61,14 +58,12 @@ export function SiteFooter() {
               target="_blank"
               rel="noopener noreferrer"
               className="flex flex-col items-center w-28"
-              style={{ filter: "grayscale(1) brightness(0.2)" }}
             >
-              <img src="/Images/innovasjon-norge.svg" alt="Innovasjon Norge" className="h-10 w-auto object-contain mb-1" />
-              <span className="text-xs text-gray-300 text-center">Innovasjon Norge</span>
+              <img src="/Images/innovasjon-norge.svg" alt="Innovasjon Norge" className="h-10 w-auto object-contain mb-1" style={{ filter: "brightness(0) invert(1)" }} />
+              <span className="text-sm text-white hover:text-white transition-colors py-2">Innovasjon Norge</span>
             </a>
           </div>
         </div>
-
         {/* Main Footer Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-12">
           {/* Company Info */}
