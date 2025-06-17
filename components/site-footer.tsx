@@ -16,6 +16,60 @@ export function SiteFooter() {
   return (
     <footer className="bg-[#354e41] py-12 sm:py-16 border-t border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
+        {/* In Partnership With - Inline Row, Centered */}
+        <div className="w-full flex justify-center mb-8">
+          <div className="flex flex-row flex-wrap items-center gap-x-8 gap-y-4">
+            <span className="font-medium text-white text-lg sm:text-xl mr-4 whitespace-nowrap">
+              In partnership with:
+            </span>
+            {/* StartupLab Oslo */}
+            <a
+              href="https://startuplab.no/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex flex-col items-center w-28"
+              style={{ filter: "grayscale(1) brightness(0.2)" }}
+            >
+              <img src="/Images/startuplab.png" alt="StartupLab Oslo" className="h-10 w-auto object-contain mb-1" />
+              <span className="text-xs text-gray-300 text-center">StartupLab Oslo</span>
+            </a>
+            {/* Norsk landbruksrådgivning */}
+            <a
+              href="https://www.nlr.no/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex flex-col items-center w-28"
+              style={{ filter: "grayscale(1) brightness(0.2)" }}
+            >
+              <img src="/Images/NLR.jpg" alt="Norsk landbruksrådgivning" className="h-10 w-auto object-contain mb-1" />
+              <span className="text-xs text-gray-300 text-center">Norsk landbruksrådgivning</span>
+            </a>
+            {/* Aggrator */}
+            <a
+              href="https://aggrator.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex flex-col items-center w-28"
+              style={{ filter: "grayscale(1) brightness(0.2)" }}
+            >
+              <img src="/Images/aggrator.jpeg" alt="Aggrator" className="h-10 w-auto object-contain mb-1" />
+              <span className="text-xs text-gray-300 text-center">Aggrator</span>
+            </a>
+            {/* Innovasjon Norge */}
+            <a
+              href="https://www.innovasjonnorge.no/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex flex-col items-center w-28"
+              style={{ filter: "grayscale(1) brightness(0.2)" }}
+            >
+              <img src="/Images/innovasjon-norge.svg" alt="Innovasjon Norge" className="h-10 w-auto object-contain mb-1" />
+              <span className="text-xs text-gray-300 text-center">Innovasjon Norge</span>
+            </a>
+          </div>
+        </div>
+
+        {/* Main Footer Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-12">
           {/* Company Info */}
           <div className="space-y-4 sm:space-y-6">
@@ -26,22 +80,20 @@ export function SiteFooter() {
                 alt="Fieldmind - AI-Powered Advisory for Modern Farming"
                 width={207}
                 height={52}
-                className="h-auto w-auto max-h-12 sm:max-h-14 md:max-h-16"  // More granular responsive sizing
+                className="h-auto w-auto max-h-12 sm:max-h-14 md:max-h-16"
                 priority={false}
               />
             </Link>
-            
             <address className="not-italic text-gray-200 text-sm sm:text-base">
               Forskningsparken – Oslo Science Park<br />
               Gaustadalléen 21<br />
               0349 Oslo, Norway
             </address>
-            
             <a
               href="https://linkedin.com/company/fieldmind"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block text-gray-200 hover:text-white transition-colors p-2" // Added padding for better touch target
+              className="inline-block text-gray-200 hover:text-white transition-colors p-2"
               aria-label="Visit Fieldmind on LinkedIn"
             >
               <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -49,11 +101,10 @@ export function SiteFooter() {
               </svg>
             </a>
           </div>
-          
           {/* Navigation Links */}
           <div className="flex flex-col space-y-3 sm:space-y-4">
             <h3 className="font-medium text-white text-lg sm:text-xl">Navigation</h3>
-            <Link href="/about" className="text-gray-200 hover:text-white transition-colors py-2"> {/* Added padding for better touch target */}
+            <Link href="/about" className="text-gray-200 hover:text-white transition-colors py-2">
               About
             </Link>
             <Link href="/contact" className="text-gray-200 hover:text-white transition-colors py-2">
@@ -69,7 +120,6 @@ export function SiteFooter() {
               Cookie Settings
             </button>
           </div>
-          
           {/* Legal */}
           <div className="flex flex-col space-y-3 sm:space-y-4">
             <h3 className="font-medium text-white text-lg sm:text-xl">Legal</h3>
