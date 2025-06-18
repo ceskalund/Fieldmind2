@@ -150,7 +150,7 @@ export default function AboutPage() {
               <h3 className="text-3xl font-medium mb-4">Stop guessing. Start knowing.</h3>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                 We combine each farm's unique data with local conditions, quality research, and climate forecasts to
-                provide tailored recommendations when it's needed most. Ayntime.
+                provide tailored recommendations when it's needed most. Anytime.
               </p>
             </div>
 
